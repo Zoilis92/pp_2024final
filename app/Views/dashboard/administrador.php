@@ -33,10 +33,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#"><i class="fas fa-user-cog"></i> Gestión de Usuarios</a>
+                    <a class="nav-link text-dark" href="<?= base_url('usuarios') ?>"><i class="fas fa-user-cog"></i> Gestión de Usuarios</a>
+                     
+
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#"><i class="fas fa-chart-line"></i> Reportes</a>
+                    <a class="nav-link text-dark" href="<?= base_url('carreras') ?>"><i class="fas fa-chart-line"></i> Carreras </a>
+                    
+
                 </li>
                 <li class="nav-item">
     <a class="nav-link text-dark" href="<?= base_url('logout') ?>"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
