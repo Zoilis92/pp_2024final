@@ -34,7 +34,19 @@ $routes->post('carreras/update/(:num)', 'CarreraController::update/$1');
 $routes->get('carreras/delete/(:num)', 'CarreraController::delete/$1');
 
 
+$routes->get('cursos', 'CursosController::index');
+$routes->get('cursos/create', 'CursosController::create');
+$routes->post('cursos/store', 'CursosController::store');
+$routes->get('cursos/edit/(:num)', 'CursosController::edit/$1');
+$routes->post('cursos/update/(:num)', 'CursosController::update/$1');
+$routes->post('cursos/delete/(:num)', 'CursosController::delete/$1');
 
+$routes->get('notas', 'NotasController::index');
+$routes->get('notas/create', 'NotasController::create');
+$routes->post('notas/store', 'NotasController::store');
+$routes->get('notas/edit/(:num)', 'NotasController::edit/$1');
+$routes->post('notas/update/(:num)', 'NotasController::update/$1');
+$routes->post('notas/delete/(:num)', 'NotasController::delete/$1');
 
 
 //$routes->get('HomeController::index'/register', 'RegisterController::index');

@@ -33,10 +33,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#"><i class="fas fa-book-open"></i> Gestión de Cursos</a>
+                    <a class="nav-link text-dark" href="<?= base_url('cursos') ?>"><i class="fas fa-book-open"></i> Gestión de Cursos</a>
+                    
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#"><i class="fas fa-users"></i> Gestión de Alumnos</a>
+                    <a class="nav-link text-dark" href="<?= base_url('notas') ?>"><i class="fas fa-users"></i> Gestión de Notas</a>
                 </li>
                 <li class="nav-item">
     <a class="nav-link text-dark" href="<?= base_url('logout') ?>"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
