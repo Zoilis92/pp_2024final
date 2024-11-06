@@ -34,7 +34,7 @@
         <div class="d-flex justify-content-between mb-3">
             <a href="<?= base_url('usuarios/create') ?>" class="btn btn-danger">Agregar Usuario</a>
             <button onclick="imprimirPagina()" class="btn btn-danger">
-                <i class="fas fa-print"></i> Imprimir
+                <i class="fas fa-print"></i> Imprimir - Descargar PDF
             </button>
         </div>
         <table class="table table-bordered">
