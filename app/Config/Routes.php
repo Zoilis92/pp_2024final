@@ -48,5 +48,11 @@ $routes->get('notas/edit/(:num)', 'NotasController::edit/$1');
 $routes->post('notas/update/(:num)', 'NotasController::update/$1');
 $routes->post('notas/delete/(:num)', 'NotasController::delete/$1');
 
+$routes->get('estudiantes/misCursos', 'Estudiantes::misCursos');
+
+$routes->get('creditos', 'CreditosController::index');
+$routes->post('creditos/guardar', 'CreditosController::guardar');
+
+
 
 //$routes->get('HomeController::index'/register', 'RegisterController::index');

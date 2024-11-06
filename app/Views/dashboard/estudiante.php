@@ -33,7 +33,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#"><i class="fas fa-book"></i> Mis Cursos</a>
+                    <a class="nav-link text-dark" href="<?= base_url('estudiantes/misCursos') ?>"><i class="fas fa-book"></i> Asignar Carrera</a>
+                    
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="#"><i class="fas fa-graduation-cap"></i> Calificaciones</a>
