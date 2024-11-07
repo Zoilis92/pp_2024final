@@ -51,7 +51,9 @@
         <h1>Bienvenido Estudiante</h1>
         <p>Aquí puedes ver tus cursos y calificaciones.</p>
     </div>
-
+    <center>
+    <img src="https://landivarencasa.url.edu.gt/wp-content/uploads/2024/02/evaluacion-de-admision-marzo-2024-1024x1024.jpg" alt="Logotipo" >
+    </center>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -53,9 +53,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="<?= base_url('creditos') ?>">Créditos</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link text-white" href="<?= base_url('logout') ?>">Inicio</a>
                     </li>
@@ -72,25 +70,25 @@
             <thead>
                 <tr>
                     <th>Descripción</th>
-                    <th>Imagen Izquierda</th>
-                    <th>Imagen Derecha</th>
+                    <th>USAC</th>
+                    <th>EFPEM</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Descripción del primer crédito de ejemplo. Aquí puedes explicar lo que representa este crédito y otros detalles importantes.</td>
-                    <td><img src="https://via.placeholder.com/100" alt="Imagen Izquierda" class="img-left"></td>
-                    <td><img src="https://via.placeholder.com/100" alt="Imagen Derecha" class="img-right"></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="USAC" class="img-left"></td>
+                    <td><img src="https://pbs.twimg.com/profile_images/1093664166114721797/LW3fXiVq_400x400.jpg" alt="Imagen Derecha" width=40px height=40px class="img-right"></td>
                 </tr>
                 <tr>
                     <td>Descripción del segundo crédito de ejemplo. Explicación adicional de lo que implica este crédito y cómo se utiliza en el programa académico.</td>
-                    <td><img src="https://via.placeholder.com/100" alt="Imagen Izquierda" class="img-left"></td>
-                    <td><img src="https://via.placeholder.com/100" alt="Imagen Derecha" class="img-right"></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="USAC" class="img-left"></td>
+                    <td><img src="https://pbs.twimg.com/profile_images/1093664166114721797/LW3fXiVq_400x400.jpg" alt="Imagen Derecha" class="img-right"></td>
                 </tr>
                 <tr>
                     <td>Descripción del tercer crédito de ejemplo. Aquí puedes dar detalles adicionales sobre cómo se asignan los créditos y su importancia.</td>
-                    <td><img src="https://via.placeholder.com/100" alt="Imagen Izquierda" class="img-left"></td>
-                    <td><img src="https://via.placeholder.com/100" alt="Imagen Derecha" class="img-right"></td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="USAC" class="img-left"></td>
+                    <td><img src="https://pbs.twimg.com/profile_images/1093664166114721797/LW3fXiVq_400x400.jpg" alt="Imagen Derecha" class="img-right"></td>
                 </tr>
             </tbody>
         </table>

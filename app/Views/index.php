@@ -91,9 +91,11 @@
                             <i class="fas fa-user-plus"></i> Registrarse
                         </a>
                     </li>
-                    <!-- Opción Créditos en el menú -->
+                    <!-- Opción Créditos en el menú con ícono -->
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="<?= base_url('creditos') ?>">Créditos</a>
+                        <a class="nav-link text-white" href="<?= base_url('creditos') ?>">
+                            <i class="fas fa-certificate"></i> Créditos
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -126,28 +128,6 @@
                     <p>Acceso a programas de intercambio y cooperación internacional.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Página Créditos -->
-    <section class="py-5">
-        <div class="container text-white">
-            <h2>Agregar Información de Créditos</h2>
-            <form action="<?= base_url('creditos/guardar') ?>" method="post" enctype="multipart/form-data">
-                <div class="mb-3">
-                    <label for="info_creditos" class="form-label">Información de Créditos</label>
-                    <textarea id="info_creditos" name="info_creditos" class="form-control" rows="4" required></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="imagen1" class="form-label">Imagen 1</label>
-                    <input type="file" id="imagen1" name="imagen1" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="imagen2" class="form-label">Imagen 2</label>
-                    <input type="file" id="imagen2" name="imagen2" class="form-control" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Guardar Créditos</button>
-            </form>
         </div>
     </section>
 
