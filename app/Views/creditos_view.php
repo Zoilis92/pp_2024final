@@ -76,7 +76,39 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Descripción del primer crédito de ejemplo. Aquí puedes explicar lo que representa este crédito y otros detalles importantes.</td>
+                    <td><b>Zoila Beatriz Sumalé Buezo</b>
+                        <br>
+                       <b> Carne 201015729</b>
+                        <br>
+                        Base de datos
+                        <br>
+                        Creación del repositorio en GIThUB
+                        <br>
+                        Administradora del proyecto
+                        <br>
+                        Creación de la pagina principal de la aplicación "index" general del proyecto
+                        <br>
+                        Creación de la barra de navegación 
+                        <br>
+                        Pagina y funcionalidad del Registro de usuarios 3 tipos de usuarios diferentes "administrador, docente y alumno"
+                        Inico de Sesión general 
+                        <br>
+                        Procesos CRUD de la vista de administrador, creación de rutas, Controladores, modelos y vistas 
+                        <br>
+                        Procesos CRUD en GESTIONAR USUARIOS Y GESTIONAR CARRERAS 
+                        <br>
+                        Creación de la tabla 
+                        <br>
+                        Creación de botón de imprimir, buscar, agregar, eliminar
+                        <br>
+                        Implementación de data table en las tablas de mis procesos CRUD 
+                        <br>
+                        Implementación y funcionalidad del boton cerrar sesión en mi pagina de administrador 
+                        <br>
+                        Creacióon de página de CREDITOS 
+                        <br>
+
+                    </td>
                     <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="USAC" class="img-left"></td>
                     <td><img src="https://pbs.twimg.com/profile_images/1093664166114721797/LW3fXiVq_400x400.jpg" alt="Imagen Derecha" width=40px height=40px class="img-right"></td>
                 </tr>
