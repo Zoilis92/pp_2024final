@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Gestión de Cursos</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css">
     <style>
-        /* Estilos personalizados para la tabla y los botones */
+        /* Estilos personalizados */
         .table {
             background-color: #f8f9fa;
             border-radius: 5px;
@@ -19,33 +22,6 @@
 
         .table tbody tr:hover {
             background-color: #e9ecef;
-        }
-
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
-
-        .btn-warning {
-            background-color: #ffc107;
-            border: none;
-        }
-
-        .btn-warning:hover {
-            background-color: #e0a800;
-        }
-
-        .btn-danger {
-            background-color: #dc3545;
-            border: none;
-        }
-
-        .btn-danger:hover {
-            background-color: #c82333;
         }
 
         body {
@@ -66,7 +42,6 @@
             margin-top: 100px;
         }
 
-        /* Estilo para el botón de impresión */
         .print-icon {
             font-size: 24px;
             cursor: pointer;
@@ -81,12 +56,18 @@
             fill: #fff;
         }
     </style>
+    <script>
+        function imprimirPDF() {
+            document.querySelector('.print-icon').style.display = 'none';
+            window.print();
+            document.querySelector('.print-icon').style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <div class="container mt-5">
         <h1>
             Gestión de Cursos
-            <!-- Ícono de impresión -->
             <span class="print-icon" onclick="imprimirPDF()" title="Imprimir o Descargar PDF">
                 Imprimir/descargar PDF
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -94,13 +75,14 @@
                 </svg>
             </span>
         </h1>
-        <a href="<?= base_url('cursos/create') ?>" class="btn btn-primary">Agregar Curso</a>
-        
+        <a href="<?= base_url('cursos/create') ?>" class="btn btn-primary mb-3">Agregar Curso</a>
+
         <?php if (session()->getFlashdata('success')): ?>
             <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
         <?php endif; ?>
 
-        <table class="table mt-3" id="tablaCursos">
+        <!-- Tabla con DataTables -->
+        <table id="tablaCursos" class="table table-dark table-striped mt-3">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -118,10 +100,10 @@
                         <td><?= $curso['descripcion'] ?></td>
                         <td><?= $curso['creditos'] ?></td>
                         <td>
-                            <a href="<?= base_url('cursos/edit/' . $curso['id_curso']) ?>" class="btn btn-success">Editar</a>
+                            <a href="<?= base_url('cursos/edit/' . $curso['id_curso']) ?>" class="btn btn-success btn-sm">Editar</a>
                             <form action="<?= base_url('cursos/delete/' . $curso['id_curso']) ?>" method="post" class="d-inline">
                                 <?= csrf_field() ?>
-                                <button type="submit" class="btn btn-info">Eliminar</button>
+                                <button type="submit" class="btn btn-info btn-sm">Eliminar</button>
                             </form>
                         </td>
                     </tr>
@@ -130,17 +112,29 @@
         </table>
     </div>
 
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
     <script>
-        function imprimirPDF() {
-            // Oculta el botón de impresión antes de imprimir
-            document.querySelector('.print-icon').style.display = 'none';
-            
-            // Abre el diálogo de impresión
-            window.print();
-            
-            // Restaura el botón de impresión después de imprimir
-            document.querySelector('.print-icon').style.display = 'block';
-        }
+        $(document).ready(function() {
+            $('#tablaCursos').DataTable({
+                "language": {
+                    "lengthMenu": "Mostrar _MENU_ registros por página",
+                    "zeroRecords": "No se encontraron resultados",
+                    "info": "Mostrando página _PAGE_ de _PAGES_",
+                    "infoEmpty": "No hay registros disponibles",
+                    "infoFiltered": "(filtrado de _MAX_ registros totales)",
+                    "search": "Buscar:",
+                    "paginate": {
+                        "previous": "Anterior",
+                        "next": "Siguiente"
+                    }
+                }
+            });
+        });
     </script>
 </body>
 </html>
