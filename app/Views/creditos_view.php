@@ -113,7 +113,32 @@
                     <td><img src="https://pbs.twimg.com/profile_images/1093664166114721797/LW3fXiVq_400x400.jpg" alt="Imagen Derecha" width=40px height=40px class="img-right"></td>
                 </tr>
                 <tr>
-                    <td>Descripción del segundo crédito de ejemplo. Explicación adicional de lo que implica este crédito y cómo se utiliza en el programa académico.</td>
+                    <td><b>Leslie Alonzo Rosales</b>
+                        <br>
+                       <b> Carne 200920097</b>
+                        <br>
+                        Apoyo en la creación de la página principal del proyecto
+                        <br>
+                        Apoyo en la creación de la barra de navegación 
+                        <br>
+                        Apoyo y parte del trabajo en la creación
+                        Pagina y funcionalidad del Registro de usuarios 3 tipos de usuarios diferentes "administrador, docente y alumno"
+                        Inico de Sesión general 
+                        <br>
+                        Procesos CRUD de la vista de DOCENTE, creación de rutas, Controladores, modelos y vistas 
+                        <br>
+                        Procesos CRUD en GESTIONAR NOTAS Y GESTIONAR CURSOS 
+                        <br>
+                        Creación de laS tablaS NOTAS Y CURSOS EN LOS PROCES CRUD 
+                        <br>
+                        Creación de botón de imprimir, buscar, agregar, eliminar
+                        <br>
+                        Implementación de data table en las tablas de mis procesos CRUD 
+                        <br>
+                        Implementación y funcionalidad del boton cerrar sesión en mi pagina de DOCENTES 
+                        <br>
+                        Creacióon de página de CREDITOS 
+                        <br>.</td>
                     <td><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Usac_logo.png" alt="USAC" class="img-left"></td>
                     <td><img src="https://pbs.twimg.com/profile_images/1093664166114721797/LW3fXiVq_400x400.jpg" alt="Imagen Derecha" class="img-right"></td>
                 </tr>
